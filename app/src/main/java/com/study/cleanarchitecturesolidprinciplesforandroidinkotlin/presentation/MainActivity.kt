@@ -1,7 +1,8 @@
-package com.study.cleanarchitecturesolidprinciplesforandroidinkotlin
+package com.study.cleanarchitecturesolidprinciplesforandroidinkotlin.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.study.cleanarchitecturesolidprinciplesforandroidinkotlin.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

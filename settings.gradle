@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Clean architecture & SOLID principles for Android in Kotlin"
 include ':app'
+include ':core'
