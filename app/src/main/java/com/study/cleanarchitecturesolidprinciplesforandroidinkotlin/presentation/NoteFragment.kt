@@ -5,22 +5,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import com.study.cleanarchitecturesolidprinciplesforandroidinkotlin.databinding.FragmentListBinding
+import com.study.cleanarchitecturesolidprinciplesforandroidinkotlin.databinding.FragmentNoteBinding
 
-class ListFragment : Fragment() {
+/**
+ * A simple [Fragment] subclass.
+ * Use the [NoteFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class NoteFragment : Fragment() {
 
-    private lateinit var binding: FragmentListBinding
+    private lateinit var binding: FragmentNoteBinding
 
     override fun onCreateView(i: LayoutInflater, c: ViewGroup?, b: Bundle?): View {
         // Inflate the layout for this fragment
-        binding = FragmentListBinding.inflate(i, c, false)
+        binding = FragmentNoteBinding.inflate(i, c, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.addNote.setOnClickListener {  v -> v.findNavController().navigate(ListFragmentDirections.actionGoToNote(0L)) }
+        binding.checkButton.setOnClickListener {  }
     }
 }
